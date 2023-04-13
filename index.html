@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO LocalStorage</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <section class="principal">
         <div class="container">
-            <h1 class="title">TODO LIST - LocalStorage</h1>
             <div class="div_todo">
                 <div class="div_content">
-                    <form action="">
-                        <label for="tarea" class="title_form">Tarea</label>
-                        <textarea class="form_text" name="tarea" id="tarea" cols="30" rows="10"></textarea>
+                    <h1 class="title">TODO LIST - LocalStorage</h1>
+                    <form action="" id="formulario">
+                        <!-- <label for="tarea" class="title_form"></label> -->
+                        <input class="form_text" name="tarea" id="tarea" placeholder="Ingresar tarea"></input>
                         <button id="btn_submit" class="btn_submit" type="submit">Agregar</button>
                     </form>
                 </div>
-                <div class="div_content"></div>
+                <div class="div_content tareas">
+                    <h2 class="title">Tareas</h2>
+                    <div class="tarea" id="tarea">
+                        
+                    </div>
+                </div>
             </div>
-        </div>
-        
+        </div> 
     </section>
     <script src="js/app.js"></script>
 </body>
