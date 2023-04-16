@@ -26,7 +26,7 @@ p{
 }
 
 .principal{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -40,6 +40,7 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 40px 0;
+    gap: 100px;
 }
 
 form{
@@ -78,7 +79,7 @@ form{
 .tarea{
     margin: 30px 0 0 0;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .title{
@@ -98,4 +99,31 @@ form{
     max-width: 400px;
     margin: 0 auto;
     color: white;
+    border-radius: 5px;
+}
+
+.eliminar, .eliminar:hover{
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+/* media querie */
+@media (max-width: 768px) {
+    .div_todo{
+        display: flex;
+        flex-direction: column;
+    }
+    .div_content{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .tareas{
+        width: 70%;
+    }
+
+    .principal{
+        width: 100%;
+    }
 }
